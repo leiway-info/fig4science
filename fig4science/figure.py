@@ -4,6 +4,7 @@ This module provides methods for building up a figure which is for scientific pu
     2. It is mainly for plotting lines.
     3. It also serves as an example based on which the users can freely adapt for their own usage.
 """
+from typing import List
 
 from matplotlib import rc
 from matplotlib.figure import Figure as MatFig
@@ -60,7 +61,6 @@ def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker) -> Ax
         line_style: str.
         line_color: list of rgb values.
         marker: str.
-        label: str.
 
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
@@ -69,12 +69,13 @@ def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker) -> Ax
     return ax
 
 
-def add_legend(ax: Axes, legend: list, ncol: int) -> Axes:
+def add_legend(ax: Axes, legend: List[str], ncol: int) -> Axes:
     """
     Adds legend to an existing ax. The explanation of the arguments can be found in matplotlib.
 
     Args:
         ax: matplotlib.axes.Axes.
+        legend: list of str. The legend for all the lines in the ax.
         ncol: int. Number of columns in the legend box.
 
     Returns:

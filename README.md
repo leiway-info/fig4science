@@ -1,5 +1,5 @@
 # fig4science
-It provides a simple way to plot pretty figures that are ready for scientific publication and presentation. It is based on Matplotlib.
+It provides a simple way to plot figures that are ready for scientific publication and presentation. It is based on Matplotlib.
 
 1. It supports subplots.
 2. It is mainly for plotting lines.

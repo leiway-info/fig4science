@@ -45,10 +45,11 @@ def add_subplot(fig: MatFig, pos=211) -> Axes:
 
     """
     ax = fig.add_subplot(pos)
+
     return ax
 
 
-def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker, label) -> Axes:
+def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker) -> Axes:
     """
     Adds a line to an existing ax. The explanation of the arguments can be found in matplotlib.
     Args:
@@ -64,11 +65,11 @@ def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker, label
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
     """
-    ax.plot(x, y, linewidth=line_width, linestyle=line_style, color=line_color, marker=marker, label=label)
+    ax.plot(x, y, linewidth=line_width, linestyle=line_style, color=line_color, marker=marker)
     return ax
 
 
-def add_legend(ax: Axes, ncol: int) -> Axes:
+def add_legend(ax: Axes, legend: list, ncol: int) -> Axes:
     """
     Adds legend to an existing ax. The explanation of the arguments can be found in matplotlib.
 
@@ -79,20 +80,24 @@ def add_legend(ax: Axes, ncol: int) -> Axes:
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
     """
-    ax.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left', ncol=ncol, mode="expand", borderaxespad=0.,
+    ax.legend(legend,
+              bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left', ncol=ncol, mode="expand", borderaxespad=0.,
               fontsize=16)
     return ax
 
 
-def set_axes(ax: Axes, xlim: list, ylim: list, fontsize: int = 20, show_grid: bool = True) -> Axes:
+def set_axes(ax: Axes, xlim: list, ylim: list, fontsize: int = 20, show_grid: bool = True,
+             hide_xticklabels: bool = False, hide_yticklabels: bool = False) -> Axes:
     """
     Sets axes to an existing ax. The explanation of the arguments can be found in matplotlib.
     Args:
         ax: matplotlib.axes.Axes.
         xlim: [float, float]. Sets the range of x-axis.
         ylim: [float, float]. Sets the range of y-axis.
-        fontsize: int. The font size of ticker labels.
+        fontsize: int. The font size of tick labels.
         show_grid: bool. Show grid or not.
+        hide_xticklabels: bool. Remove the xticklabels in the ax.
+        hide_yticklabels: bool. Remove the yticklabels in the ax.
 
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
@@ -104,10 +109,15 @@ def set_axes(ax: Axes, xlim: list, ylim: list, fontsize: int = 20, show_grid: bo
     if show_grid:
         ax.grid(True, linestyle='--')  # choose a linestyle between '-' | '--' | ':' | '-.'
 
+    if hide_xticklabels:
+        ax.set_xticklabels([])
+    if hide_yticklabels:
+        ax.set_yticklabels([])
+
     return ax
 
 
-def add_axes_labels(ax: Axes, xlabel: str, ylabel: str, fontsize: int = 20) -> Axes:
+def add_axes_labels(ax: Axes, xlabel: str = '', ylabel: str = '', fontsize: int = 20) -> Axes:
     """
     Adds axes labels to an existing ax. The explanation of the arguments can be found in matplotlib.
     Args:
@@ -119,12 +129,18 @@ def add_axes_labels(ax: Axes, xlabel: str, ylabel: str, fontsize: int = 20) -> A
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
     """
-    ax.set_xlabel(xlabel=xlabel, fontsize=fontsize)
-    ax.set_ylabel(ylabel=ylabel, fontsize=fontsize)
+    if xlabel:
+        ax.set_xlabel(xlabel=xlabel, fontsize=fontsize)
+    if ylabel:
+        ax.set_ylabel(ylabel=ylabel, fontsize=fontsize)
     return ax
 
 
-def save(fig: MatFig, dpi: int = 300, file_name: str, file_extension: str = 'pdf', file_directory: str = ''):
+def use_tight_layout(fig: MatFig):
+    fig.tight_layout()
+
+
+def save(fig: MatFig, file_name: str, file_extension: str = 'pdf', file_directory: str = '', dpi: int = 300):
     """
     Saves the fig into a specified location with specified extension.
     Args:

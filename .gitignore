@@ -12,9 +12,14 @@
 
 
 # IDE generated files #
-######################
+#######################
 .idea
 __pycache__
+
+
+# Virtual Environment #
+#######################
+env_*
 
 
 # Generated Results #

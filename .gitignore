@@ -1,0 +1,22 @@
+# Compiled source #
+###################
+*.egg-info
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+
+
+
+# IDE generated files #
+######################
+.idea
+__pycache__
+
+
+# Generated Results #
+######################
+*.pdf

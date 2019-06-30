@@ -5,6 +5,18 @@ It provides a simple way to plot figures that are ready for scientific publicati
 2. It is mainly for plotting lines.
 3. It also serves as an example based on which the users can freely adapt for their own usage.
 
+## Figure Quality
+
+* Concise while informative
+    * Keep it simple and direct to the point
+    * No need of special effect
+* Rigorous and precise
+    * Curves are within the limits of x and y axes.
+    * Legends are not covering the curves
+* Visible
+    * Labels and legends are big enough
+    * Lines are thick enough
+    * Readable for color-blind people and for black-white printouts.
 
 
 ## Prerequisities

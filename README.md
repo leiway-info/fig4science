@@ -9,8 +9,8 @@ It provides a simple way to plot figures that are ready for scientific publicati
 
 * Concise while informative
     * Keep it simple and direct to the point.
-    * Try to avoid duplicate information.
     * No need of special effect.
+    * Try to avoid duplicate information.
 * Rigorous and precise
     * Curves are within the limits of x and y axes.
     * Legends are not covering the curves.

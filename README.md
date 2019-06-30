@@ -8,14 +8,15 @@ It provides a simple way to plot figures that are ready for scientific publicati
 ## Figure Quality
 
 * Concise while informative
-    * Keep it simple and direct to the point
-    * No need of special effect
+    * Keep it simple and direct to the point.
+    * Try to avoid duplicate information.
+    * No need of special effect.
 * Rigorous and precise
     * Curves are within the limits of x and y axes.
-    * Legends are not covering the curves
+    * Legends are not covering the curves.
 * Visible
-    * Labels and legends are big enough
-    * Lines are thick enough
+    * Labels and legends are big enough.
+    * Lines are thick enough.
     * Readable for color-blind people and for black-white printouts.
 
 

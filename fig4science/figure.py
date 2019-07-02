@@ -34,7 +34,7 @@ def new_plot(figsize: tuple) -> MatFig:
     return fig
 
 
-def add_subplot(fig: MatFig, pos=211) -> Axes:
+def add_subplot(fig: MatFig, pos=111) -> Axes:
     """
     Adds a subplot to an existing fig.
     Args:
@@ -83,7 +83,7 @@ def add_legend(ax: Axes, legend: List[str], ncol: int) -> Axes:
     """
     ax.legend(legend,
               bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left', ncol=ncol, mode="expand", borderaxespad=0.,
-              fontsize=16)
+              fontsize=20)
     return ax
 
 

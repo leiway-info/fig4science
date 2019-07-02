@@ -17,7 +17,7 @@ It provides a simple way to plot figures that are ready for scientific publicati
 * Visible
     * Labels and legends are big enough.
     * Lines are thick enough.
-    * Readable for color-blind people and for black-white printouts.
+    * Think about for color-blind people, low-quality beamer or screen, and black-white printouts.
 
 
 ## Prerequisities

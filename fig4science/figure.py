@@ -50,7 +50,7 @@ def add_subplot(fig: MatFig, pos=111) -> Axes:
     return ax
 
 
-def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker) -> Axes:
+def add_a_line(ax: Axes, x, y, line_width, line_style, line_color, marker=None) -> Axes:
     """
     Adds a line to an existing ax. The explanation of the arguments can be found in matplotlib.
     Args:
@@ -87,12 +87,15 @@ def add_legend(ax: Axes, legend: List[str], ncol: int) -> Axes:
     return ax
 
 
-def set_axes(ax: Axes, xlim: list, ylim: list, fontsize: int = 20, show_grid: bool = True,
+def set_axes(ax: Axes, x_scale: str = 'linear', y_scale: str = 'linear', xlim: tuple = (), ylim: tuple = (),
+             fontsize: int = 20, show_grid: bool = True,
              hide_xticklabels: bool = False, hide_yticklabels: bool = False) -> Axes:
     """
     Sets axes to an existing ax. The explanation of the arguments can be found in matplotlib.
     Args:
         ax: matplotlib.axes.Axes.
+        x_scale: str. Choose between 'linear' | 'log'
+        y_scale: str. Choose between 'linear' | 'log'
         xlim: [float, float]. Sets the range of x-axis.
         ylim: [float, float]. Sets the range of y-axis.
         fontsize: int. The font size of tick labels.
@@ -103,8 +106,13 @@ def set_axes(ax: Axes, xlim: list, ylim: list, fontsize: int = 20, show_grid: bo
     Returns:
         ax: matplotlib.axes.Axes. It returns an instance of this type.
     """
-    ax.set_xlim(xlim[0], xlim[1])
-    ax.set_ylim(ylim[0], ylim[1])
+    ax.set_xscale(x_scale)
+    ax.set_yscale(y_scale)
+
+    if xlim:
+        ax.set_xlim(xlim[0], xlim[1])
+    if ylim:
+        ax.set_ylim(ylim[0], ylim[1])
     ax.tick_params(labelsize=fontsize)
 
     if show_grid:

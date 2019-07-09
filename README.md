@@ -18,7 +18,8 @@ It provides a simple way to plot figures that are ready for scientific publicati
     * Labels and legends are big enough.
     * Lines are thick enough.
     * Think about for color-blind people, low-quality beamer or screen, and black-white printouts.
-
+    * Save the figure as vector format (e.g. pdf or eps) than bitmap format (e.g. png or jpg).
+    
 
 ## Prerequisities
 Main package is based on 
@@ -35,3 +36,20 @@ numpy
 ## Installation
 This package is not yet uploaded to the Python Package Index. So simply download or git clone the whole package to your computer,
 and use it as your own package. 
+
+
+## General Usage
+The following code shows how to use `figure.py`. Note that the code just shows the general concept, so all detailed arguments in functions are ignored.
+```python
+new_plot()  # Start a new figure
+add_subplot()
+add_a_line()
+add_legend()
+set_axes()
+add_axes_labels()
+use_tight_layout()
+save()
+```
+
+# Detailed Usage
+Please see the examples in `example.py` file.

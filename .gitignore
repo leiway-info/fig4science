@@ -25,3 +25,6 @@ env_*
 # Generated Results #
 ######################
 *.pdf
+*.png
+*.eps
+*.jpg

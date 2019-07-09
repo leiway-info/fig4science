@@ -2,7 +2,7 @@
 It provides a simple way to plot figures that are ready for scientific publication and presentation. It is based on Matplotlib.
 
 1. It supports subplots.
-2. It is mainly for plotting lines, since it is based on `ax.plot()` in `matplotlib.pyplot`.
+2. It is mainly for plotting lines, because it is based on `ax.plot()` in `matplotlib.pyplot`.
 3. It also serves as an example based on which the users can freely adapt for their own usage.
 
 ## Figure Quality

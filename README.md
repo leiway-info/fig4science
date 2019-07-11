@@ -53,3 +53,8 @@ save()
 
 # Detailed Usage
 Please see the examples in `example.py` file.
+
+## Examples
+![](/screenshots/paper.png?raw=true "Optional Title")
+![](/screenshots/three_subplots.png?raw=true "Optional Title")
+![](/screenshots/two_subplots_log.png?raw=true "Optional Title")

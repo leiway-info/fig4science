@@ -21,7 +21,7 @@ It provides a simple way to plot figures that are ready for scientific publicati
     * Save the figure as vector format (e.g. pdf or eps) than bitmap format (e.g. png or jpg).
     
 ## Example Figures
-The following figure demonstrate the results of using the proposed way of making figures. Note that although I suggest using vector images (e.g. pdf-format), this example is png-format because I upload them to github.
+The following figure demonstrates the results of using the proposed way of making figures. Note that although I suggest using vector images (e.g. pdf-format), this example is png-format because I upload it to github.
 
 <img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/paper.png" width="800"/>
 

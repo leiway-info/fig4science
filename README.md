@@ -24,8 +24,7 @@ It provides a simple way to plot figures that are ready for scientific publicati
 The following 3 figures demonstrate the results of using the proposed way of making figures. Note that although I suggest using vector images (e.g. pdf-format), these 3 examples are png-format because I upload them to github.
 
 <img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/paper.png" width="800"/>
-<img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/three_subplots.png" width="400" />
-<img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/two_subplots_log.png" width="400" />
+<img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/three_subplots.png" width="400" /> <img src="https://github.com/leiway-info/fig4science/blob/example_images/screenshots/two_subplots_log.png" width="400" />
 
 
 

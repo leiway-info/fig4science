@@ -20,6 +20,12 @@ It provides a simple way to plot figures that are ready for scientific publicati
     * Think about for color-blind people, low-quality beamer or screen, and black-white printouts.
     * Save the figure as vector format (e.g. pdf or eps) than bitmap format (e.g. png or jpg).
     
+## Example Figures
+![](https://github.com/leiway-info/fig4science/blob/example_images/screenshots/paper.png)
+![](https://github.com/leiway-info/fig4science/blob/example_images/screenshots/three_subplots.png)
+![](https://github.com/leiway-info/fig4science/blob/example_images/screenshots/two_subplots_log.png)
+
+
 
 ## Prerequisities
 Main package is based on 

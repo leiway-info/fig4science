@@ -57,3 +57,6 @@ save()
 
 # Detailed Usage
 Please see the examples in `example.py` file.
+
+# Reference
+The author is inspired by the paper: Damiano Varagnolo, _How To Make Pretty Figures With Matlab_, June 2, 2015 - Version 0.9.

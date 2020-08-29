@@ -7,11 +7,11 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="fig4science",
     version="1.0",
-    author="LeiWay Info",
-    author_email="leiwayinfo@gmail.com",
+    author="LeiWuInfo",
+    author_email="leiwuinfo@gmail.com",
     description="Make pretty figures for scientific publication and presentation",
     long_description=long_description,
-    url="https://github.com/leiway-info/fig4science",
+    url="https://github.com/leiwuinfo/fig4science",
     packages=setuptools.find_packages(),
     classifiers=[
        "Programming Language :: Python :: 3",
